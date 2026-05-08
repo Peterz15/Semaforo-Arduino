@@ -14,3 +14,18 @@ void setup() {
   digitalWrite(gLed, LOW);
   digitalWrite(bLed, LOW);
 }
+
+void loop() {
+  // Secuencia Vehicular: Verde -> Amarillo -> Rojo
+  digitalWrite(gLed, HIGH);
+  digitalWrite(rLed, LOW);
+  delay(5000); 
+
+  digitalWrite(gLed, LOW);
+  digitalWrite(yLed, HIGH);
+  delay(2000);
+  digitalWrite(yLed, LOW);
+
+  digitalWrite(rLed, HIGH);
+  delay(5000);
+}
