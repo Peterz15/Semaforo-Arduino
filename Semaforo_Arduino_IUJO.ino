@@ -28,4 +28,9 @@ void loop() {
 
   digitalWrite(rLed, HIGH);
   delay(5000);
+  
+  digitalWrite(rLed, HIGH);
+  digitalWrite(bLed, HIGH); 
+  delay(5000);
+  digitalWrite(bLed, LOW);
 }
